@@ -1,0 +1,11 @@
+/**
+* Basic typography style for copy text
+*/
+body {
+	@include font-size(17px);
+	color: $text-color;
+}
+
+.text-primary {
+	color: $brand-color !important;
+}

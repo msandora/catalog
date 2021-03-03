@@ -1,0 +1,9 @@
+.product-details {
+  h1 {
+    @include font-size(21px);
+  }
+  .btn-primary {
+    line-height: 30px;
+    width: 100%;
+  }
+}

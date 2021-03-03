@@ -1,0 +1,111 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+/// Event wrapper
+/// @param {Bool} $self [false] - Whether or not to include current selector
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+// Usage
+// .Header__logo {
+// 	@include on-event {
+// 		padding-left: 0.3rem;
+// 	}
+// }
+// Output
+// .Header__logo:hover, .Header__logo:active, .Header__logo.dropdown.open, .Header__logo:focus {
+//   padding-left: 0.3rem;
+// }
+
+
+/// Make a context based selector a little more friendly
+/// @author Hugo Giraudel
+/// @param {String} $context
+@mixin when-inside($context) {
+  #{$context} & {
+    @content;
+  }
+}
+
+
+// Define default font size with backup for browsers that do not support rem
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+// Usage
+// p {
+//   @include font-size(14px)
+// }
+// Output
+// p {
+//   font-size: 14px; //For unsupported browsers
+//   font-size: 0.8rem;
+// }
+
+
+// Handles all placeholders
+@mixin input-placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+
+
+/// Mixin to manage responsive breakpoints
+/// BReakpoints can be found in _variables.scss
+/// @param {String} $breakpoint - Breakpoint name
+/// @require $breakpoints
+
+@mixin respond-to($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+  // If the key doesn't exist in the map
+  @else {
+      @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+          + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+
+// Truncate stuff on front end
+@mixin truncate($truncation-boundary) {
+  max-width: $truncation-boundary;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// Apply grdient
+@mixin gradient($top_color, $bottom_color) {
+  background-image: -webkit-linear-gradient(top, $top_color 0%, $bottom_color 100%);
+  background-image: linear-gradient(to bottom, $top_color 0%, $bottom_color 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($top_color)}', endColorstr='#{ie-hex-str($bottom_color)}', GradientType=0); // IE9 and down
+}

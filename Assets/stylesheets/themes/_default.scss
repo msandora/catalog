@@ -1,0 +1,34 @@
+// -----------------------------------------------------------------------------
+// When having several themes, this file contains everything related to the
+// default one.
+// -----------------------------------------------------------------------------
+
+.star-rating {
+  width: 30px;
+  height: 30px;
+}
+
+.nav-tabs .nav-item {
+  width: 25%;
+  padding: 0 5px;
+}
+.nav-tabs {
+  border: none;
+  .nav-link {
+    border-top-left-radius: initial;
+    border-top-right-radius: initial;
+  }
+}
+
+.tab-content .card-body {
+  padding: 5px;
+}
+
+.center-vertical {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card-text ul {
+  margin-left: 15px;
+}

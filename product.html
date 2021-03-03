@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="shortcut icon" href="/PLX-DEV/Assets/images/favicon.ico" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- <link rel="preload" href="/PLX-DEV/Assets/stylesheets/main.css" as="style"> -->
+    <link
+      rel="stylesheet"
+      href="/PLX-DEV/Assets/stylesheets/main.css"
+      media="print"
+      onload="this.media='all'"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      async
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    ></script>
+
+    <title>Plexaderm Products</title>
+  </head>
+  <body>
+    <div id="app" class="wrapper">
+      <div class="content">
+        <!-- Content -->
+        <main>
+
+          <section class="container mt-4 product-details">
+            <div class="row d-md-none">
+              <div class="col-md-12">
+                <div class="text-center">
+                  <h1 class="card-title mb-2">Rapid Reduction Serum</h1>
+                    
+                  <div class="card-text mb-1">
+                    <img
+                      class="star-rating"
+                      src="/PLX-DEV/Assets/images/star-rating.png"
+                      alt="rating"
+                    />
+                    <img
+                      class="star-rating"
+                      src="/PLX-DEV/Assets/images/star-rating.png"
+                      alt="rating"
+                    />
+                    <img
+                      class="star-rating"
+                      src="/PLX-DEV/Assets/images/star-rating.png"
+                      alt="rating"
+                    />
+                    <img
+                      class="star-rating"
+                      src="/PLX-DEV/Assets/images/star-rating.png"
+                      alt="rating"
+                    />
+                    <img
+                      class="star-rating"
+                      src="/PLX-DEV/Assets/images/star-rating.png"
+                      alt="rating"
+                    />
+                  </div>
+                  <div class="card-text text-black-50 mb-1">000 REVIEWS</div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div id="slider" class="row align-items-center">
+                  <div id="product-carousel" class="carousel slide">
+                    <!-- main slider carousel items -->
+                    <div class="carousel-inner text-center">
+                      <div class="active carousel-item" data-slide-number="0">
+                        <img
+                          src="/PLX-DEV/Assets/images/products/rrs_1_360x360.jpg"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="carousel-item" data-slide-number="1">
+                        <img
+                          src="/PLX-DEV/Assets/images/products/rrs_2_360x360.jpg"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="carousel-item" data-slide-number="2">
+                        <img
+                          src="/PLX-DEV/Assets/images/products/rrs_3_360x360.jpg"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="carousel-item" data-slide-number="3">
+                        <img
+                          src="/PLX-DEV/Assets/images/products/rrs_4_360x360.jpg"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="carousel-item" data-slide-number="4">
+                        <img
+                          src="/PLX-DEV/Assets/images/products/rrs_360x360.jpg"
+                          class="img-fluid"
+                        />
+                      </div>
+
+                      <a
+                        class="carousel-control-prev"
+                        href="#product-carousel"
+                        role="button"
+                        data-slide="prev"
+                      >
+                        <span
+                        class="carousel-control-prev-icon bg-dark border border-dark rounded-circle"
+                        aria-hidden="true"
+                        ></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a
+                        class="carousel-control-next"
+                        href="#product-carousel"
+                        role="button"
+                        data-slide="next"
+                      >
+                        <span
+                        class="carousel-control-next-icon bg-dark border border-dark rounded-circle"
+                        aria-hidden="true"
+                        ></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+
+                    <ul
+                      class="carousel-indicators list-inline mx-auto border px-2"
+                    >
+                      <li class="list-inline-item active">
+                        <a
+                          id="carousel-selector-0"
+                          class="selected"
+                          data-slide-to="0"
+                          data-target="#product-carousel"
+                        >
+                          <img
+                            src="/PLX-DEV/Assets/images/products/rrs_1_360x360.jpg"
+                            class="img-fluid"
+                          />
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a
+                          id="carousel-selector-1"
+                          data-slide-to="1"
+                          data-target="#product-carousel"
+                        >
+                          <img
+                            src="/PLX-DEV/Assets/images/products/rrs_2_360x360.jpg"
+                            class="img-fluid"
+                          />
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a
+                          id="carousel-selector-2"
+                          data-slide-to="2"
+                          data-target="#product-carousel"
+                        >
+                          <img
+                            src="/PLX-DEV/Assets/images/products/rrs_3_360x360.jpg"
+                            class="img-fluid"
+                          />
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a
+                          id="carousel-selector-3"
+                          data-slide-to="3"
+                          data-target="#product-carousel"
+                        >
+                          <img
+                            src="/PLX-DEV/Assets/images/products/rrs_4_360x360.jpg"
+                            class="img-fluid"
+                          />
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a
+                          id="carousel-selector-4"
+                          data-slide-to="4"
+                          data-target="#product-carousel"
+                        >
+                          <img
+                            src="/PLX-DEV/Assets/images/products/rrs_360x360.jpg"
+                            class="img-fluid"
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">  
+                  <div class="d-none d-md-block">                   
+                    <h1 class="card-title mb-2">Rapid Reduction Serum</h1>
+                    
+                    <div class="card-text mb-1">
+                      <img
+                        class="star-rating"
+                        src="/PLX-DEV/Assets/images/star-rating.png"
+                        alt="rating"
+                      />
+                      <img
+                        class="star-rating"
+                        src="/PLX-DEV/Assets/images/star-rating.png"
+                        alt="rating"
+                      />
+                      <img
+                        class="star-rating"
+                        src="/PLX-DEV/Assets/images/star-rating.png"
+                        alt="rating"
+                      />
+                      <img
+                        class="star-rating"
+                        src="/PLX-DEV/Assets/images/star-rating.png"
+                        alt="rating"
+                      />
+                      <img
+                        class="star-rating"
+                        src="/PLX-DEV/Assets/images/star-rating.png"
+                        alt="rating"
+                      />
+                    </div>
+                    <div class="card-text text-black-50 mb-1">000 REVIEWS</div>
+                  </div>
+                  <div class="text-center text-md-left">                   
+                    <h5 class="card-text mb-1">$00.00</h5>
+                    <i class="card-text mb-2 text-primary"
+                      >Free Shipping on all orders</i
+                    >
+                    <p class="card-text mb-4">5ml | .17 FL OZ</p>
+                  </div>
+                    <div class="card-text mb-2 text-uppercase">
+                      <a class="btn btn-primary" href="/PLX-DEV/index.html"
+                        >Add To Bag</a
+                      >
+                    </div>
+                    <div class="card-text mb-2">
+                      <a class="btn btn-primary font-italic" href="/PLX-DEV/index.html"
+                        >Buy 2 GET 1 FREE</a
+                      >
+                    </div>
+                    <div class="card-text mb-2">
+                      <a class="btn btn-primary font-italic" href="/PLX-DEV/index.html"
+                        >Buy 4 GET 2 FREE</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="container mt-4">
+            <div class="row center-vertical">
+              <div class="col-md-6">
+                <div class="card border-0 plx-youtube">
+                  <img
+                    class="tru-youtube-image"
+                    src="/PLX-DEV/Assets/images/PDP/pdp_rrs_video_thumbnail_518x291.jpg"
+                    alt="..."
+                  />
+                  <div class="play-button"></div>
+                  <div class="video_id visually-hidden">jMao1DUOH4o</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <h4 class="card-title mb-3">
+                      Visibly reduce under-eye bags, wrinkles, dark circles,
+                      fine lines & crow's feet instantly
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="container mt-4">
+            <div class="row">
+              <div class="col-md-12">
+                <ul
+                  class="nav nav-tabs md-tabs text-center"
+                  id="myTabMD"
+                  role="tablist"
+                >
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active btn btn-primary"
+                      id="product-tab-md"
+                      data-toggle="tab"
+                      href="#product-md"
+                      role="tab"
+                      aria-controls="product-md"
+                      aria-selected="true"
+                      >Product</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link btn btn-primary"
+                      id="benefits-tab-md"
+                      data-toggle="tab"
+                      href="#benefits-md"
+                      role="tab"
+                      aria-controls="benefits-md"
+                      aria-selected="false"
+                      >Benefits</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link btn btn-primary"
+                      id="ingredients-tab-md"
+                      data-toggle="tab"
+                      href="#ingredients-md"
+                      role="tab"
+                      aria-controls="ingredients-md"
+                      aria-selected="false"
+                      >Ingredients</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link btn btn-primary"
+                      id="directions-tab-md"
+                      data-toggle="tab"
+                      href="#directions-md"
+                      role="tab"
+                      aria-controls="directions-md"
+                      aria-selected="false"
+                      >Directions</a
+                    >
+                  </li>
+                </ul>
+                <div class="tab-content pt-4" id="myTabContentMD">
+                  <div
+                    class="tab-pane fade show active"
+                    id="product-md"
+                    role="tabpanel"
+                    aria-labelledby="product-tab-md"
+                  >
+                    <div class="row center-vertical">
+                      <div class="col-md-6">
+                        <div class="card border-0">
+                          <div class="card-body">
+                            <h5 class="card-title mb-3">
+                              Rapid Reduction Eye Cream
+                            </h5>
+                            <div class="card-text text-black-50">
+                              The advanced Rapid Reduction Serum is the ultimate
+                              beauty product that works in minutes to visibly
+                              reduce under-eye bags, smooth fine lines and
+                              wrinkles, and minimize the look of dark circles
+                              under the eyes. Our serum was formulated to be
+                              easier to spread and evenly apply than previous
+                              formulas. It has a smoother feeling when dry and a
+                              more satin finish, leaving you with a natural,
+                              youthful glow. Results of our new advanced serum
+                              last up to 10 hours! They say that seeing is
+                              believing, and with Plexaderm you get the
+                              immediate results you're looking for!
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card border-0">
+                          <img
+                            src="/PLX-DEV/Assets/images/PDP/pdp_product_description_517x258.jpg"
+                            class="card-img-top"
+                            alt="product description"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="benefits-md"
+                    role="tabpanel"
+                    aria-labelledby="benefits-tab-md"
+                  >
+                    <div class="row center-vertical">
+                      <div class="col-md-6">
+                        <div class="card border-0">
+                          <div class="card-body">
+                            <h5 class="card-title mb-3">Key Benefits</h5>
+                            <div class="card-text text-black-50">
+                              <ul>
+                                <li>Works in as little as 10 minutes</li>
+                                <li>
+                                  Smoother, more beautiful skin in minutes
+                                </li>
+                                <li>Natural youthful glow & satin finish</li>
+                                <li>Results that last up to 10 hours</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card border-0">
+                          <img
+                            src="/PLX-DEV/Assets/images/PDP/pdp_key_benefits_517x258.jpg"
+                            class="card-img-top"
+                            alt="Key Benefits"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="ingredients-md"
+                    role="tabpanel"
+                    aria-labelledby="ingredients-tab-md"
+                  >
+                    <div class="row center-vertical">
+                      <div class="col-md-6">
+                        <div class="card border-0">
+                          <div class="card-body">
+                            <h5 class="card-title mb-3">Ingredients</h5>
+                            <div class="card-text text-black-50">
+                              Purified Water (Aqua), Propylene Glycol, Sodium
+                              Silicate, Magnesium Aluminum Silicate, Acetyl
+                              Hexapeptide-8, Hydrolyzed Rice Protein, Soluble
+                              Collagen, Cellulose Gum, Xanthan Gum, Titanium
+                              Dioxide, CI 77491, CI 77492, Phenoxyethanol,
+                              Ethylhexylglycerin.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card border-0">
+                          <img
+                            src="/PLX-DEV/Assets/images/PDP/pdp_ingredients_517x258.jpg"
+                            class="card-img-top"
+                            alt="Ingredients"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="directions-md"
+                    role="tabpanel"
+                    aria-labelledby="directions-tab-md"
+                  >
+                    <div class="row center-vertical">
+                      <div class="col-md-6">
+                        <div class="card border-0">
+                          <div class="card-body">
+                            <h5 class="card-title mb-3">Directions</h5>
+                            <div class="card-text text-black-50">
+                              Wash and dry skin thoroughly. Slowly press down on
+                              pump to dispense a small amount of serum onto
+                              fingertip (start with about half the size of a
+                              pea). Gently apply a thin layer to targeted areas,
+                              being careful to avoid contact with eyes. Allow
+                              serum to set and dry (10 minutes for optimal
+                              results).
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card border-0">
+                          <img
+                            src="/PLX-DEV/Assets/images/PDP/pdp_directions_517x258.jpg"
+                            class="card-img-top"
+                            alt="Directions"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="suggestion-carousel container my-4">
+            <div class="container text-center my-3">
+              <h3 class="font-weight-light">You may also like</h3>
+              <div class="row mx-auto my-auto">
+                <div
+                  id="suggestionCarousel"
+                  class="carousel slide w-100"
+                  data-ride="carousel"
+                >
+                  <div class="carousel-inner w-100" role="listbox">
+                    <div class="carousel-item active">
+                      <div class="col-md-4">
+                        <div class="card card-body">
+                          <img
+                            class="img-fluid"
+                            src="/PLX-DEV/Assets/images/Category/ppec_250x250.jpg"
+                            alt="Peppermint Exfoliating Cleanser"
+                          />
+                          <div class="card-text text-black-50">
+                            Peppermint <br />Exfoliating Cleanser
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="col-md-4">
+                        <div class="card card-body">
+                          <img
+                            class="img-fluid"
+                            src="/PLX-DEV/Assets/images/Category/ntcs_250x250.jpg"
+                            alt="Night Time Collagen Serum"
+                          />
+                          <div class="card-text text-black-50">
+                            Night Time
+                            <br />Collagen Serum
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="col-md-4">
+                        <div class="card card-body">
+                          <img
+                            class="img-fluid"
+                            src="/PLX-DEV/Assets/images/Category/ppdm_250x250.jpg"
+                            alt="Plex-Perfect Daily Moisturizer"
+                          />
+                          <div class="card-text text-black-50">
+                            Plex-Perfect
+                            <br />Daily Moisturizer
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="col-md-4">
+                        <div class="card card-body">
+                          <img
+                            class="img-fluid"
+                            src="/PLX-DEV/Assets/images/Category/ppec_250x250.jpg"
+                            alt="Dark Spot Fade Gel"
+                          />
+                          <div class="card-text text-black-50">
+                            Dark Spot
+                            <br />Fade Gel
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="col-md-4">
+                        <div class="card card-body">
+                          <img
+                            class="img-fluid"
+                            src="/PLX-DEV/Assets/images/Category/ha_250x250.jpg"
+                            alt="Hyaluronic Moisturizer"
+                          />
+                          <div class="card-text text-black-50">
+                            Hyaluronic
+                            <br />Moisturizer
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    class="carousel-control-prev w-auto"
+                    href="#suggestionCarousel"
+                    role="button"
+                    data-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon bg-dark border border-dark rounded-circle"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a
+                    class="carousel-control-next w-auto"
+                    href="#suggestionCarousel"
+                    role="button"
+                    data-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon bg-dark border border-dark rounded-circle"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+        <!-- Content.// -->
+      </div>
+    </div>
+  </body>
+</html>
+
+<script async src="/PLX-DEV/Assets/js/main.js"></script>
