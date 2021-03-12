@@ -1,5 +1,77 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+.home-page {
+   .card {
+      overflow: hidden;
+      border-radius: 0;
+   }
+   .card-title {
+      @include font-size(28px);
+   }
+   .card-desc {
+      @include font-size(19px);
+      line-height: 20px;
+   }
 
-// Nothing to see here Yet 
+}
+
+.mission-statement {
+   background: #cccccc url("/WorkProjects/catalog/Assets/images/creative/mission_statement.jpg") no-repeat center;
+   background-size: cover;
+   height: 320px;
+   .card {
+      background: transparent;
+      width:100%;
+      overflow: hidden;
+      border-radius: 0;
+      letter-spacing: 2px;
+      .card-title {
+         font-weight: bold;
+         @include respond-to('lg') {
+            @include font-size(28px);
+         }
+         @include font-size(20px);
+      }
+      .btn {
+         color: $brand-secondary;
+         font-weight: bold;
+         @include respond-to('lg') {
+            @include font-size(26px);
+         }
+         @include font-size(18px);
+
+         @include on-event {
+            background-color: transparent;
+        }
+      }
+   }
+}
+
+.three-card-banner {
+   .card {
+      overflow: hidden;
+      border-radius: 0;
+      .card-img-top {
+         border-radius: 0;
+         width: 100%;
+         object-fit: cover;
+         height: 300px;
+         @include respond-to('md') {
+            height: 33vw;
+         }
+      }
+      .card-body{
+         height: auto;
+         vertical-align: middle;
+         padding: 1rem;
+      }
+      .card-title {
+         width: 100%;
+         @include respond-to('lg') {
+            @include font-size(24px);
+         }
+         @include font-size(20px);
+      }
+   }
+}

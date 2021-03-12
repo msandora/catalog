@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link rel="shortcut icon" href="/PLX-DEV/Assets/images/favicon.ico" />
+    <link
+      rel="shortcut icon"
+      href="/WorkProjects/catalog/Assets/images/favicon.ico"
+    />
     <link
       type="text/css"
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
-    <!-- <link rel="preload" href="/PLX-DEV/Assets/stylesheets/main.css" as="style"> -->
+    <!-- <link rel="preload" href="/WorkProjects/catalog/Assets/stylesheets/main.css" as="style"> -->
     <link
       rel="stylesheet"
-      href="/Work_Projects/PLX-DEV/Assets/stylesheets/main.css"
+      href="/WorkProjects/catalog/Assets/stylesheets/main.css"
       media="print"
       onload="this.media='all'"
     />
@@ -26,421 +29,514 @@
       src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     ></script>
 
-    <title>Plexaderm Skincare</title>
+    <title>Catalog Site</title>
   </head>
   <body>
     <div id="app" class="wrapper">
-      <div class="content">
+      <div class="content home-page">
+
+        <!--Navbar -->
+        <header>
+          <section class="promo-banner-1 container-fluid text-center pt-2 pb-2">
+            <b>SUBSCRIBE TO OUR NEWSLETTER</b>
+          </section>
+          <section class="promo-banner-2 container-fluid text-center pt-2 pb-2">
+            <b>FREE SHIPPING ON ALL ORDERS</b>
+          </section>
+          <nav class="container-fluid navbar navbar-expand-lg navbar-light">
+            <div class="container px-0">
+              <a class="navbar-brand" href="#">           
+                <img class="navbar-logo"
+                src="/WorkProjects/catalog/Assets/images/creative/plx_logo.png"/>
+                <span class="sr-only">Plexaderm Skincare</span>
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-3" aria-controls="navbarSupportedContent-3" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent-3">
+                <ul class="navbar-nav m-auto">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " id="navbarDropdownMenuLink-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop
+                    </a>
+                    <div class="dropdown-menu dropdown-default pb-lg-5" aria-labelledby="navbarDropdownMenuLink-3">
+                      <div class="container p-0">
+                        <div class="row w-100 m-0">
+                          <div class="col-12 col-lg-5">
+                            <span class="dropdown-title d-none d-lg-block">Shop</span>
+                            <a class="dropdown-item" href="#">Rapid Reduction Serum</a>
+                            <a class="dropdown-item" href="#">Reset and Replenish Pads</a>
+                            <a class="dropdown-item" href="#">Daily Moisturizer</a>
+                            <a class="dropdown-item" href="#">Dark Spot Fade Gel</a>
+                            <a class="dropdown-item" href="#">Hyaluronic Moisturizer</a>
+                            <a class="dropdown-item" href="#">Peppermint Exfoliating Cleanser</a>
+                            <a class="dropdown-item" href="#">Night Time Collagen Serum</a>
+                            <a class="dropdown-item" href="#">Triple Action Vitamin C Serum</a>
+                          </div>
+                          <div class="col-12 col-lg-7 d-none d-lg-block">
+                            <img
+                            class="d-block img-fluid"
+                            src="https://via.placeholder.com/600x270.png?text=NavImage-600x270"
+                            alt="First Slide"
+                          />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link " href="#">Blog
+                      <span class="sr-only">(current)</span>
+                    </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " id="navbarDropdownMenuLink-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Why Plexaderm
+                    </a>
+                    <div class="dropdown-menu dropdown-default pb-lg-5" aria-labelledby="navbarDropdownMenuLink-3">
+                      <div class="container p-0">
+                        <div class="row w-100 m-0">
+                          <div class="col-12 col-lg-5">
+                            <span class="dropdown-title d-none d-lg-block">Why Plexaderm</span>
+                            <a class="dropdown-item" href="#">Our Story</a>
+                            <a class="dropdown-item" href="#">Awards</a>
+                            <a class="dropdown-item" href="#">Reviews</a>
+                            <a class="dropdown-item" href="#">Stories</a>
+                            <a class="dropdown-item" href="#">FAQ’s & Tips</a>
+                          </div>
+                          <div class="col-12 col-lg-7 d-none d-lg-block">
+                            <img
+                            class="d-block img-fluid"
+                            src="https://via.placeholder.com/600x270.png?text=NavImage-600x270"
+                            alt="First Slide"
+                          />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="navbar-nav ml-auto nav-flex-icons">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <img class="nav-icon" src="/WorkProjects/catalog/Assets/images/creative/search.png">
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <img class="nav-icon" src="/WorkProjects/catalog/Assets/images/creative/cart.png">
+                      <span class="badge badge-pill bg-white">(23)</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <!--/.Navbar -->
+
         <!-- Content -->
         <main>
-          <section class="container mt-4 mb-4">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="card border-0">
-                  <div class="card-body text-center">
-                    <h5 class="card-title mb-3 font-weight-bold">
-                      Headline Copy Goes Here
-                    </h5>
-                    <div class="card-text text-black-50">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est
+          <!-- Carousel -->
+          <section
+          id="carouselId"
+          class="carousel slide container"
+          data-ride="carousel"
+          >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselId"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselId" data-slide-to="1"></li>
+            <li data-target="#carouselId" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active" data-slide-number="0">
+              <picture>
+                <source
+                  sizes="(max-width: 576px)"
+                  srcset="https://via.placeholder.com/960x300.png?text=Slide%201%20-%20960x300"
+                />
+                <img
+                  class="d-block"
+                  src="https://via.placeholder.com/540x300.png?text=Slide%201%20-540x300"
+                  alt="First Slide"
+                />
+              </picture>
+              <div class="carousel-caption container">
+                <div class="alignment text-secondary">
+                  <h2 class="text-uppercase">Prep and Perfect</h2>
+                  <h6>Our best selling beauty kit bundles three of our customer favorites for targeted skincare support plus 15% savings!</h6>
+                  <div>
+                    <a
+                    class="btn btn-primary text-nowrap text-uppercase"
+                    href="/">Learn more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="carousel-item" data-slide-number="1">
+              <picture>
+                <source
+                  sizes="(max-width: 576px)"
+                  srcset="https://via.placeholder.com/1140x300.png?text=Slide%202%20-1140x300"
+                />
+                <img
+                  class="d-block"
+                  src="https://via.placeholder.com/1140x300.png?text=Slide%202%20-1140x300"
+                  alt="Second Slide"
+                />
+              </picture>
+              <div class="carousel-caption container">
+                <div class="alignment text-secondary">
+                  <h2 class="text-uppercase">Prep and Perfect</h2>
+                  <h6>Our best selling beauty kit bundles three of our customer favorites for targeted skincare support plus 15% savings!</h6>
+                  <div>
+                    <a
+                    class="btn btn-primary text-nowrap text-uppercase"
+                    href="/">Learn more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-slide-number="2">
+              <picture>
+                <source
+                  sizes="(max-width: 576px)"
+                  srcset="https://via.placeholder.com/1140x300.png?text=Slide%203%20-1140x300"
+                />
+                <img
+                  class="d-block"
+                  src="https://via.placeholder.com/1140x300.png?text=Slide%203%20-1140x300"
+                  alt="Third Slide"
+                />
+              </picture>
+              <div class="carousel-caption container">
+                <div class="alignment text-secondary">
+                  <h2 class="text-uppercase">Prep and Perfect</h2>
+                  <h6>Our best selling beauty kit bundles three of our customer favorites for targeted skincare support plus 15% savings!</h6>
+                  <div>
+                    <a
+                    class="btn btn-primary text-nowrap text-uppercase"
+                    href="/">Learn more</a>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+          </section>
+          <!-- Carousel.// -->
+
+          <section class="container text-center pt-2 pb-2">
+            <span>As Advertised On</span>
+          </section>
+          <section class="container mt-4 bg-gray-lighter">
+            <div class="row center-vertical">
+              <div class="col-md-4 p-0">
+                <div class="card-body text-gray-light text-md-left text-center">
+                  <h4 class="card-title mb-0">
+                    LOREM IPSUM
+                    DOLOR SIT AME
+                  </h4>
+                </div>
+              </div>
+              <div class="col-md-8 p-0">
+                <div class="card border-0" style="max-height:330px">
+                  <div class="card-body p-0">
+                    <img
+                    class="img-fluid"
+                    src="/WorkProjects/catalog/Assets/images/creative/smiley-mature-woman-with-make-up-posing-with-hand-face-copy-space.jpg"
+                    alt="..."
+                    />
+                    <div class="play-button">
+                      <img
+                      class="img-fluid"
+                      src="/WorkProjects/catalog/Assets/images/creative/play.png"
+                      alt="play video"
+                      />
                     </div>
+                    <div class="video_id visually-hidden">jMao1DUOH4o</div>
                   </div>
                 </div>
               </div>
             </div>
           </section>
+          <section class="container mt-4 bg-secondary">
+            <div class="row center-vertical">
+              <div class="col-md-4 p-0">
+                <div class="card-body text-white text-md-left text-center">
+                  <h4 class="card-title">
+                    LOREM IPSUM
+                    DOLOR SIT AME
+                  </h4>
+                  <div class="card-text mb-1">
+                    <img
+                      class="star-rating"
+                      src="/WorkProjects/catalog/Assets/images/star-rating.png"
+                      alt="rating 1 star"
+                    />
+                    <img
+                      class="star-rating"
+                      src="/WorkProjects/catalog/Assets/images/star-rating.png"
+                      alt="rating 2 star"
+                    />
+                    <img
+                      class="star-rating"
+                      src="/WorkProjects/catalog/Assets/images/star-rating.png"
+                      alt="rating 3 star"
+                    />
+                    <img
+                      class="star-rating"
+                      src="/WorkProjects/catalog/Assets/images/star-rating.png"
+                      alt="rating 4 star"
+                    />
+                    <img
+                      class="star-rating"
+                      src="/WorkProjects/catalog/Assets/images/star-rating.png"
+                      alt="rating 5 star"
+                    />
+                  </div>
+                  <div class="card-text mb-1">000 REVIEWS</div>
 
-          <section class="container text-center">
+                  <span class="card-desc mb-0">
+                    Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea
+                    commodo consequat.
+                  </span>
+                </div>
+              </div>
+              <div class="col-md-8 p-0">
+                <div class="card border-0" style="max-height:330px">
+                  <div class="card-body p-0">
+                    <img
+                    class="img-fluid"
+                    src="/WorkProjects/catalog/Assets/images/creative/woman-applying-face-cream.jpg"
+                    alt="..."
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="mission-statement container mt-4 text-uppercase">
+            <div class="row h-100">
+              <div class="col-sm-5 col-md-6 p-0 d-none d-sm-block">
+              </div>
+              <div class="col-sm-7 col-md-6 p-0 text-center center-vertical">
+                <div class="card h-40 border-0">
+                  <div class="card-body">
+                    <h5 class="card-title mx-auto w-100">
+                      The Plexaderm<br> Commitment</h5>
+                      <div class="mx-auto btn btn-outline-secondary">Mission Statement</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="three-card-banner container mt-4 text-uppercase">
             <div class="row">
-              <div class="col-md-4 col-sm-6">
+              <div class="col-md-4 p-0">
                 <div class="card border-0">
-                  <img
-                    class="card-img-top"
-                    src="/PLX-DEV/Assets/images/Category/rrs_pump_250x250 copy.jpg"
-                    alt="Card image"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title mb-2">Rapid Reduction <br />Serum</h5>
-                    <h6 class="card-title mb-1">
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                    </h6>
-                    <div class="card-text text-black-50">000 REVIEWS</div>
+                  <img class="card-img-top" src="/WorkProjects/catalog/Assets/images/creative/3_product_rrs.jpg" alt="Rapid Reduction Serum">
+                  <div class="card-body center-vertical text-center">
+                    <h5 class="card-title m-0">Rapid Reduction <br>Serum</h5>
                   </div>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-6">
+              <div class="col-md-4 p-0">
                 <div class="card border-0">
-                  <img
-                    class="card-img-top"
-                    src="/PLX-DEV/Assets/images/Category/rrs_30ct_250x250.jpg"
-                    alt="Card image"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title mb-2">
-                      Rapid Reduction <br />Serum - 30 count
-                    </h5>
-                    <h6 class="card-title mb-1">
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                    </h6>
-                    <div class="card-text text-black-50">000 REVIEWS</div>
+                  <img class="card-img-top" src="/WorkProjects/catalog/Assets/images/creative/3_products_dsfg.jpg" alt="Dark Spot Fade Gel">
+                  <div class="card-body center-vertical">
+                    <h5 class="card-title text-center m-0">Dark Spot <br> Fade Gel</h5>
                   </div>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-6">
+              <div class="col-md-4 p-0">
                 <div class="card border-0">
-                  <img
-                    class="card-img-top"
-                    src="/PLX-DEV/Assets/images/Category/rrp_250x250.jpg"
-                    alt="Card image"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title mb-2">
-                      Reset & Replenish <br />Pads
-                    </h5>
-                    <h6 class="card-title mb-1">
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                    </h6>
-                    <div class="card-text text-black-50">000 REVIEWS</div>
+                  <img class="card-img-top" src="/WorkProjects/catalog/Assets/images/creative/PLX_NTCS_LIFESTYLE.jpg" alt="Night Time Collagen Serum">
+                  <div class="card-body center-vertical">
+                    <h5 class="card-title text-center m-0">Night Time <br> Collagen Serum</h5>
                   </div>
                 </div>
               </div>
-       
-              <div class="col-md-4 col-sm-6">
-                <div class="card border-0">
-                  <img
-                    class="card-img-top"
-                    src="/PLX-DEV/Assets/images/Category/ppdm_250x250.jpg"
-                    alt="Card image"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title mb-2">
-                      Rapid Reduction <br />Daily Moisturizer
-                    </h5>
-                    <h6 class="card-title mb-1">
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                    </h6>
-                    <div class="card-text text-black-50">000 REVIEWS</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <div class="card border-0">
-                  <img
-                    class="card-img-top"
-                    src="/PLX-DEV/Assets/images/Category/dsfg_250x250.jpg"
-                    alt="Card image"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title mb-2">Dark Spot <br />Fade Gel</h5>
-                    <h6 class="card-title mb-1">
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                    </h6>
-                    <div class="card-text text-black-50">000 REVIEWS</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <div class="card border-0">
-                  <img
-                    class="card-img-top"
-                    src="/PLX-DEV/Assets/images/Category/ha_250x250.jpg"
-                    alt="Card image"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title mb-2">
-                      Hyaluronic <br />Moisturizer
-                    </h5>
-                    <h6 class="card-title mb-1">
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                    </h6>
-                    <div class="card-text text-black-50">000 REVIEWS</div>
-                  </div>
-                </div>
-              </div>
- 
-              <div class="col-md-4 col-sm-6">
-                <div class="card border-0">
-                  <img
-                    class="card-img-top"
-                    src="/PLX-DEV/Assets/images/Category/ppec_250x250.jpg"
-                    alt="Card image"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title mb-2">
-                      Peppermint <br />Exfoliating Cleanser
-                    </h5>
-                    <h6 class="card-title mb-1">
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                    </h6>
-                    <div class="card-text text-black-50">000 REVIEWS</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <div class="card border-0">
-                  <img
-                    class="card-img-top"
-                    src="/PLX-DEV/Assets/images/Category/ntcs_250x250.jpg"
-                    alt="Card image"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title mb-2">
-                      Night Time <br />Sollagen Serum
-                    </h5>
-                    <h6 class="card-title mb-1">
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                    </h6>
-                    <div class="card-text text-black-50">000 REVIEWS</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <div class="card border-0">
-                  <img
-                    class="card-img-top"
-                    src="/PLX-DEV/Assets/images/Category/vit_c_250x250.jpg"
-                    alt="Card image"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title mb-2">Vitamin C <br />Serum</h5>
-                    <h6 class="card-title mb-1">
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                      <img
-                        class="star-rating"
-                        src="/PLX-DEV/Assets/images/star-rating.png"
-                        alt="rating"
-                      />
-                    </h6>
-                    <div class="card-text text-black-50">000 REVIEWS</div>
-                  </div>
-                </div>
-							</div>
-							
             </div>
           </section>
         </main>
         <!-- Content.// -->
+
+        <!-- Footer -->
+        <footer class="mt-4">
+          <section class="container text-center pt-2 pb-2"></section>
+
+          <section class="container text-center pt-2 pb-2">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-12 py-2">
+                <div class="footer-widget">
+                  <div class="footer-menu footer-menu--1">
+                    <span class="footer-widget-title">Company</span>
+                    <ul class="mt-2">
+                      <li class="mb-2">
+                        <a href="#">Our Story</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="#">Awards</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="#">Satisfaction Guarantee</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="#">Privacy Policy</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="#">Partners</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="#">Press Release</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="#">Do Not Sell My Info</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 py-2">
+                <div class="footer-widget">
+                  <div class="footer-menu footer-menu--1">
+                    <span class="footer-widget-title">Shipping & Returns</span>
+                    <ul class="mt-2">
+                      <li class="mb-2">
+                        <a href="#">International Orders</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="#">Return Policy</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="#">Shipping Policy</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 py-2">
+                <div class="footer-widget">
+                  <div class="footer-menu">
+                    <span class="footer-widget-title">Customer Service</span>
+                    <ul class="mt-2">
+                      <li class="mb-2">
+                        <a href="#">Email Address</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="#">Customer Care</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="#">Monday - Friday 8am - 7pm EST</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="#">Saturday 8am - 5pm EST</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="#">Call to Order 800#</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="#">Service & Support 800#</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="#">Contact Us link to an email</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- end /.footer-menu -->
+                </div>
+                <!-- Ends: .footer-widget -->
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 pt-2">
+                <div class="footer-widget">
+                  <div class="footer-menu no-padding">
+                    <span class="footer-widget-title">Community</span>
+                    <ul class="mt-2">
+                      <li class="mb-2">
+                        <a href="#">Blog</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="#">Reviews</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="#">Stories</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="#">FAQs</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- end /.footer-menu -->
+                </div>
+                <!-- Ends: .footer-widget -->
+              </div>
+            </div>
+          </section>
+          
+          <section class="container text-center pt-2 pb-2">
+            <ul class="social-links">
+              <li id="twitter-social-link">
+                <a class="fa fa-twitter social-link" alt="Follow Plexaderm on Twitter" aria-label="Follow Plexaderm on Twitter" href="https://twitter.com/plexaderm">
+                  <span class="sr-only">Twitter</span>
+                </a>
+              </li>
+              <li id="instagram-social-link">
+                <a class="fa fa-instagram social-link" alt="Follow Plexaderm on Instagram" aria-label="Follow Plexaderm on Instagram" href="https://www.instagram.com/plexaderm">
+                  <span class="sr-only">Instagram</span>
+                </a>
+              </li>
+              <li id="facebook-social-link">
+                <a class="fa fa-facebook social-link" alt="Follow Plexaderm on Facebook" aria-label="Follow Plexaderm on Facebook" href="https://www.facebook.com/Plexaderm">
+                  <span class="sr-only">Facebook</span>
+                </a>
+              </li>
+              <li id="pinterest-social-link">
+                <a class="fa fa-pinterest social-link" alt="Follow Plexaderm on Pinterest" aria-label="Follow Plexaderm on Pinterest" href="https://www.pinterest.com/plexadermskinca">
+                  <span class="sr-only">Pinterest</span>
+                </a>
+              </li>
+              <li id="youtube-social-link">
+                <a class="fa fa-youtube social-link" alt="Follow Plexaderm on Youtube" aria-label="Follow Plexaderm on Youtube" href="https://www.youtube.com/c/plexadermskincare">
+                  <span class="sr-only">Youtube</span>
+                </a>
+              </li>
+          </ul>
+          </section>
+
+          <section class="container text-center pt-2 pb-5">
+            <p>
+              † These statements have not been evaluated by the food and drug
+              administration. This product is not intended to diagnose, treat,
+              cure or prevent any disease.
+            </p>
+            <p>
+              **Free Standard Shipping applies on all orders within the contiguous Unites States. Additional shipping and processing fees may apply to orders shipping to Alaska and Hawaii. International Shipping rates are calculated by
+              weight and destination and will vary.
+            </p>
+            <p>*Individual Results May Vary.</p>
+            <p>
+              Discount already reflected in the advertised product price;
+              limited time, limited quantities available; coupon codes not valid
+              on select Kits, Bundles, Duos or Sets; while supplies last.
+            </p>
+            <p>
+              ^Extra $10 off applies to any $49 order, extra $20 off applies to
+              any $99 order, extra $30 off applies to any $149 order, use code
+              NEWWHO at checkout; expires 2/01/2021 at 11:59PM ET; Coupon codes
+              not valid on select kits, bundles, duos or sets; limit one (1)
+              coupon code use per customer; limit one (1) coupon code use per
+              order; minimum $59 purchase required.
+            </p>
+          </section>
+        </footer>
+        <!-- Footer.// -->
       </div>
     </div>
   </body>
 </html>
 
-<!-- <script async src="/PLX-DEV/Assets/js/main.js" ></script> -->
+<script async src="/WorkProjects/catalog/Assets/js/main.js"></script>

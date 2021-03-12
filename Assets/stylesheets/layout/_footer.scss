@@ -1,3 +1,37 @@
-.Footer__container {
-	position: relative;
+footer {
+  background-color: $brand-secondary;
+  color:$white-base; 
+  .footer-menu {
+    .footer-widget-title {
+      color: $brand-color;
+      font-weight: bold;
+    }
+    li a {
+      color: $white-base;
+    }
+  }
+}
+.social-links {
+  margin: 10px auto;
+  text-align: center;
+  padding: 0;
+  li {
+    display: inline-block;
+    margin: 0 5px;
+    a {
+      border: 1px solid $white-base;
+      border-radius: 50%;
+      color: $white-base;
+      display: block;
+      font-size: 16px;
+      height: 36px;
+      line-height: 35px;
+      margin: 0 auto;
+      width: 36px;
+      text-align: center;
+    }
+  }
+  .social-link {
+    display: inline-block;
+  }
 }

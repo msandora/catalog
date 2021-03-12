@@ -7,10 +7,9 @@
  */
 html {
   box-sizing: border-box;
-}
-html, body {
   overflow-x: hidden;
 }
+
 /**
  * Basic styles for wrapper elements
  */
@@ -19,7 +18,8 @@ body {
 	margin: 0px;
 	background: $white-base;
   font-family: $font-primary;
-  position: relative
+  position: relative;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -62,15 +62,30 @@ a {
  * Default settings for list elements
  */
 ol, ul {
-  // list-style-type: none;
+  list-style-type: none;
   padding: 0px;
   margin: 0px;
 }
-
+ 
 a.anchor {
   display: block;
   position: relative;
   top: -100px;
   height: 0;
   visibility: hidden;
+}
+/**
+ * Colors - Overrides Bootstrap
+ */
+.bg-gray-lighter{
+  background-color: $gray-lighter !important; 
+}
+.bg-primary {
+  background-color: $brand-primary !important; 
+}
+.bg-secondary {
+  background-color: $brand-secondary !important; 
+}
+.bg-tertiary {
+  background-color: $brand-tertiary !important; 
 }

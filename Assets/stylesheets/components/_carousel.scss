@@ -1,5 +1,107 @@
+#carouselId {
+  &.carousel {
+    background: #eee;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .carousel-inner {
+    height: 300px;
+    @include respond-to('lg') {
+      height: 360px;
+    }
+  }
+  .carousel-item {
+    height: inherit;
+    img {
+      min-height: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      float: right;
+      display: block;
+      @include respond-to('xsm') {
+        width: 100%;
+      }
+      @include respond-to('lg') {
+        min-height: 360px;
+      }
+      @media only screen and (min-width: 1600px) {
+        width: 100%;
+      }
+    }
+  }
+  .carousel-caption {
+    @include font-size(24px);
+    line-height: 24px;
+    @include respond-to('lg') {
+      @include font-size(28px);
+    }
+    text-align: left;
+    top: 15px;
+    bottom: unset;
+    text-transform: capitalize;
+    left: 20px;
+    right: 20px;
+    margin: inherit;
+    width: calc(100% - 60px);
+    @include respond-to('md') {
+     // width: calc(100% - 70px - 50%);
+      left: 70px;
+      right: 70px;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $white-base;
+      font-family: $font-primary;
+      margin-bottom: 0.5rem;
+    }
+    h1 {
+      font-weight: 500;
+      @include font-size(26px);
+      line-height: 27px;
+      @include respond-to('md') {
+        @include font-size(30px);
+        line-height: 31px;
+      }
+    }
+    h2 {
+      font-weight: 500;
+      @include font-size(23px);
+      line-height: 24px;
+      @include respond-to('md') {
+        @include font-size(30px);
+        line-height: 31px;
+      }
+    }
+    h3,
+    h4,
+    h5,
+    h6 {
+      @include respond-to('md') {
+        width: calc(100% - 70px - 50%);
+      }
+   
+      font-weight: normal;
+      @include font-size(19px);
+      line-height: 20px;
+    }
+    p {
+      font-weight: 100;
+      margin-bottom: 0.5rem;
+    }
+    a.btn {
+      padding: 0.5rem 1rem;
+      font-weight: bold;
+    }
+  }
+}
 
-.suggestion-carousel {
+
+
+#suggestion-carousel {
   @media (max-width: 768px) {
     .carousel-inner .carousel-item > div {
       display: none;

@@ -3,9 +3,18 @@
 */
 body {
 	@include font-size(17px);
-	color: $text-color;
+	color: #585A5E;
 }
 
+.text-gray-light {
+	color:  $gray-light !important; 
+}
 .text-primary {
-	color: $brand-color !important;
+	color: $brand-primary !important; 
+}
+.text-secondary {
+	color: $brand-secondary !important; 
+}
+.text-tertiary {
+	color: $brand-tertiary !important; 
 }

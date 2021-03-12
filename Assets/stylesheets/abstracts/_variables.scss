@@ -24,7 +24,7 @@ $gray-light:              lighten($black-base, 46.7%) !default; // #777
 $gray-lighter:            lighten($black-base, 93.5%) !default; // #eee
 
 //## Brand colors
-$brand-color:             #7483ae !default;
+$brand-color:             #00214A !default;
 $brand-color-darker:      darken($brand-color, 15%) !default; 
 $brand-color-dark:        darken($brand-color, 10%) !default; 
 $brand-color-mid:         darken($brand-color, 5%) !default; 
@@ -33,7 +33,8 @@ $brand-color-lighter:     lighten($brand-color, 15%) !default;
 
 //## brand colors for use across Bootstrap.
 $brand-primary:           $brand-color !default; 
-$brand-secondary:         #CDB5A7 !default;
+$brand-secondary:         #7F89B2 !default;
+$brand-tertiary:          #A8B5ce !default;
 $brand-success:           #5cb85c !default;
 $brand-info:              #5bc0de !default;
 $brand-warning:           #f0ad4e !default;
@@ -61,16 +62,17 @@ $border-radius: 3px;
 //== Typography
 //
 //## Font, Font Size
-$font-primary: sans-serif !default;
+$font-primary: 'OpenSans';
 $font-secondary: 'Helvetica Neue', 'Helvetica', 'Courier New', 'Monaco', monospace !default;
 
-/// Breakpoints map 
+/// Bootstrap Official Breakpoints
 $breakpoints: (
-    'phone-only':  ( max-width:  576px ),
-    'tablet-portrait':  ( min-width:  768px ),
-    'tablet-landscape':  ( min-width:  1024px ),
-    'desktop':  ( min-width:  1200px ),
-    'big-desktop':  ( min-width: 1800px )
+    'xsm':  ( max-width:  576px ),
+    'sm':  ( min-width:  576px ),
+    'md':  ( min-width:  768px ),
+    'lg':  ( min-width:  992px ),
+    'xl':  ( min-width: 1200px ),
+    'xxl':  ( min-width: 1400px )
 ) !default;
 
 
