@@ -6,10 +6,22 @@ $(window).scroll(function(){
   }
 });
 
-$("a.nav-link").click(function() {
-  console.log('click')
-  $("nav.navbar").toggleClass('open-nav');
+$(".dropdown a.nav-link").click(function() {
+  // if ($(".navbar-collapse").hasClass("show")) {
+  //   $("nav.navbar").addClass('open-nav');
+  // } else {
+  //   $("nav.navbar").removeClass('open-nav');
+  // }
+  // if ($(window).width() > 990) {
+    $("nav.navbar").toggleClass('open-nav');
+  // }
 });
+// $(".navbar-toggler").click(function() {
+//   if ($(window).width() < 992) {
+//     $("nav.navbar").toggleClass('open-nav');
+//  }
+// });
+
 
 $('#suggestionCarousel').carousel({
   interval: 10000

@@ -25,12 +25,12 @@ button, input {
 }
 .btn-primary {
     color: $white-base;
-    background: $brand-color;
+    background: $brand-secondary;
     border: none;
     border-radius: 0;
     @include on-event {
         color: $white-base;
-        background-color: $brand-color-light;
+        background-color: $brand-tertiary;
     }
 }
 
@@ -38,7 +38,7 @@ button, input {
 .btn-primary:not(:disabled):not(.disabled):active, 
 .show>.btn-primary.dropdown-toggle {
     color: $white-base;
-    background-color: $brand-color;
+    background-color: $brand-secondary;
     border: none;
 }
 

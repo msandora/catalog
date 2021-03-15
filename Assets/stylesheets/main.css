@@ -10933,21 +10933,21 @@ button, input {
 
 .btn-primary {
   color: white;
-  background: #00214A;
+  background: #7F89B2;
   border: none;
   border-radius: 0;
 }
 
 .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
   color: white;
-  background-color: #00387d;
+  background-color: #A8B5ce;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active,
 .btn-primary:not(:disabled):not(.disabled):active,
 .show > .btn-primary.dropdown-toggle {
   color: white;
-  background-color: #00214A;
+  background-color: #7F89B2;
   border: none;
 }
 
