@@ -5,10 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-	<link rel="shortcut icon" href="/WorkProjects/catalog/Assets/images/favicon.ico"  />
+	<link rel="shortcut icon" href="/Assets/images/favicon.ico"  />
 
-	<link rel="preload" href="/WorkProjects/catalog/Assets/stylesheets/main.css" as="style">
-	<link rel="stylesheet" href="/WorkProjects/catalog/Assets/stylesheets/main.css" media="print" onload="this.media='all'">
+	<link rel="preload" href="/Assets/stylesheets/main.css" as="style">
+	<link rel="stylesheet" href="/Assets/stylesheets/main.css" media="print" onload="this.media='all'">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" async></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" async></script>
@@ -19,10 +19,100 @@
 <body>
 	<div id="app" class="wrapper">
 		<div class="content">
-
+			<!--Navbar -->
+			<header>
+				<nav class="container-fluid navbar navbar-expand-lg navbar-light">
+					<div class="container px-0">
+						<a class="navbar-brand" href="#">           
+							<img class="navbar-logo"
+							src="/Assets/images/creative/plx_logo.png"/>
+							<span class="sr-only">Plexaderm Skincare</span>
+						</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-3" aria-controls="navbarSupportedContent-3" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent-3">
+							<ul class="navbar-nav m-auto">
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle " id="navbarDropdownMenuLink-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop
+									</a>
+									<div class="dropdown-menu dropdown-default pb-lg-5" aria-labelledby="navbarDropdownMenuLink-3">
+										<div class="container p-0">
+											<div class="row w-100 m-0">
+												<div class="col-12 col-lg-5">
+													<span class="dropdown-title d-none d-lg-block">Shop</span>
+													<a class="dropdown-item" href="#">Rapid Reduction Serum</a>
+													<a class="dropdown-item" href="#">Reset and Replenish Pads</a>
+													<a class="dropdown-item" href="#">Daily Moisturizer</a>
+													<a class="dropdown-item" href="#">Dark Spot Fade Gel</a>
+													<a class="dropdown-item" href="#">Hyaluronic Moisturizer</a>
+													<a class="dropdown-item" href="#">Peppermint Exfoliating Cleanser</a>
+													<a class="dropdown-item" href="#">Night Time Collagen Serum</a>
+													<a class="dropdown-item" href="#">Triple Action Vitamin C Serum</a>
+												</div>
+												<div class="col-12 col-lg-7 d-none d-lg-block">
+													<img
+													class="d-block img-fluid"
+													src="https://via.placeholder.com/600x270.png?text=NavImage-600x270"
+													alt="First Slide"
+												/>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="nav-item active">
+									<a class="nav-link " href="#">Blog
+										<span class="sr-only">(current)</span>
+									</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle " id="navbarDropdownMenuLink-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Why Plexaderm
+									</a>
+									<div class="dropdown-menu dropdown-default pb-lg-5" aria-labelledby="navbarDropdownMenuLink-3">
+										<div class="container p-0">
+											<div class="row w-100 m-0">
+												<div class="col-12 col-lg-5">
+													<span class="dropdown-title d-none d-lg-block">Why Plexaderm</span>
+													<a class="dropdown-item" href="#">Our Story</a>
+													<a class="dropdown-item" href="#">Awards</a>
+													<a class="dropdown-item" href="#">Reviews</a>
+													<a class="dropdown-item" href="#">Stories</a>
+													<a class="dropdown-item" href="#">FAQ’s & Tips</a>
+												</div>
+												<div class="col-12 col-lg-7 d-none d-lg-block">
+													<img
+													class="d-block img-fluid"
+													src="https://via.placeholder.com/600x270.png?text=NavImage-600x270"
+													alt="First Slide"
+												/>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<ul class="navbar-nav ml-auto nav-flex-icons">
+								<li class="nav-item">
+									<a class="nav-link" href="#">
+										<img class="nav-icon" src="/Assets/images/creative/search.png">
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">
+										<img class="nav-icon" src="/Assets/images/creative/cart.png">
+										<span class="badge badge-pill bg-white">(23)</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</header>
+			<!--/.Navbar -->
 			<!-- Content -->
-			<main class="flex Header__site-padding-top-with-promo" >
-				<div class="container">
+			<main>
+				<section class="container mt-4 mb-4">
 					<div class="row">
 						<div class="col-md-12">
               <div class="card border-0">
@@ -36,12 +126,11 @@
               </div>
 						</div>
 					</div>
-				</div>
+				</section>
 				<!-- /.container -->
 			</main>
 			<!-- Content.// -->
 		</div>
-
 	</div>
 </body>
 </html>

@@ -10689,16 +10689,23 @@ a.anchor {
 
 @font-face {
   font-family: "OpenSans";
-  src: url("/WorkProjects/catalog/Assets/images/fonts/OpenSans.ttf") format("truetype");
+  src: url("/Assets/images/fonts/OpenSans.ttf") format("truetype");
 }
 
 /**
 * Basic typography style for copy text
 */
 body {
-  font-size: 17px;
-  font-size: 1.0625rem;
-  color: #585A5E;
+  color: #555555;
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+    font-size: 1rem;
+  }
 }
 
 .text-gray-light {
@@ -10963,6 +10970,35 @@ button, input {
   height: 75px;
 }
 
+#product-reviews img.star-rating {
+  width: 25px;
+  height: 25px;
+}
+
+#product-reviews .comments:before {
+  content: "";
+  background-image: url("/Assets/images/creative/beginning_quotemark.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 5px;
+  left: 24px;
+  width: 30px;
+  display: block;
+  height: 25px;
+}
+
+#product-reviews .comments:after {
+  content: "";
+  background-image: url("/Assets/images/creative/end_quotemark.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 10px;
+  right: 24px;
+  width: 30px;
+  display: block;
+  height: 25px;
+}
+
 #carouselId.carousel {
   background: #eee;
   padding: 0;
@@ -11198,7 +11234,7 @@ button, input {
 }
 
 .mission-statement {
-  background: #cccccc url("/WorkProjects/catalog/Assets/images/creative/mission_statement.jpg") no-repeat center;
+  background: #cccccc url("/Assets/images/creative/mission_statement.jpg") no-repeat center;
   background-size: cover;
   height: 320px;
 }

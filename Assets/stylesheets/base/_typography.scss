@@ -2,8 +2,11 @@
 * Basic typography style for copy text
 */
 body {
-	@include font-size(17px);
-	color: #585A5E;
+	color: $text-color;
+	@include font-size(18px);
+	@include respond-to('md') {
+		@include font-size(16px);
+	}
 }
 
 .text-gray-light {

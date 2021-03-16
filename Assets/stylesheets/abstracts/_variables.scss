@@ -6,15 +6,9 @@
 //== Colors
 //
 
-//## White colors
 $white-base:              rgba(255, 255, 255, 1) !default; // #fff
 $off-white:               #f6f6f6 !default;
-$white_70:                hsla(0, 0%, 100%, .7);
-
-//## Black colors
 $black-base:              rgba(0, 0, 0, 1) !default; // #000
-$black_60:                rgba(0, 0, 0, .6);
-$black_30:                rgba(0, 0, 0, .3);
 
 //## Gray colors
 $gray-darker:             lighten($black-base, 13.5%) !default; // #222
@@ -42,7 +36,6 @@ $brand-danger:            #d9534f !default;
 
 
 //== Scaffolding
-//
 //## Settings for some of the most global styles.
 
 //** Global text color on `<body>`.
