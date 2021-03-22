@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      rel="shortcut icon"
+      href="/WorkProjects/catalog/Assets/images/favicon.ico"
+    /> 
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="/WorkProjects/catalog/Assets/stylesheets/main.css"
+      media="print"
+      onload="this.media='all'"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      async
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    ></script>
+
+    <title>Catalog Site</title>
+  </head>
+  <body>
+    <div id="app" class="wrapper">
+      <div class="content">
+         <!--Navbar -->
+         <header>
+            <section class="promo-banner-1 container-fluid text-center pt-2 pb-2">
+               <b>SUBSCRIBE TO OUR NEWSLETTER</b>
+            </section>
+            <section class="promo-banner-2 container-fluid text-center pt-2 pb-2">
+               <b>FREE SHIPPING ON ALL ORDERS</b>
+            </section>
+            <nav class="container-fluid navbar navbar-expand-lg navbar-light">
+               <div class="container px-0">
+                  <a class="navbar-brand" href="../catalog/index.html">           
+                  <img class="navbar-logo"
+                  src="/WorkProjects/catalog/Assets/images/creative/plx_logo.png"/>
+                  <span class="sr-only">Plexaderm Skincare</span>
+                  </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-3" aria-controls="navbarSupportedContent-3" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent-3">
+                  <ul class="navbar-nav m-auto">
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " id="navbarDropdownMenuLink-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop
+                        </a>
+                        <div class="dropdown-menu dropdown-default pb-lg-5" aria-labelledby="navbarDropdownMenuLink-3">
+                        <div class="container p-0">
+                           <div class="row w-100 m-0">
+                              <div class="col-12 col-lg-5">
+                              <span class="dropdown-title d-none d-lg-block">Shop</span>
+                              <a class="dropdown-item" href="../catalog/product.html">All Products</a>
+                              <a class="dropdown-item" href="../catalog/product.html">Anti-Aging</a>
+                              <a class="dropdown-item" href="../catalog/product.html">Brighteners</a>
+                              <a class="dropdown-item" href="../catalog/product.html">Cleansers</a>
+                              <a class="dropdown-item" href="../catalog/product.html">Moisturizers</a>
+                              <a class="dropdown-item" href="../catalog/product.html">Kits & Bundles</a>
+                              </div>
+                              <div class="col-12 col-lg-7 d-none d-lg-block">
+                              <img
+                              class="d-block img-fluid"
+                              src="https://via.placeholder.com/600x270.png?text=NavImage-600x270"
+                              alt="First Slide"
+                              />
+                              </div>
+                           </div>
+                        </div>
+                        </div>
+                     </li>
+                     <li class="nav-item active">
+                        <a class="nav-link " href="../catalog/blog-index.html">Blog
+                        <span class="sr-only">(current)</span>
+                        </a>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " id="navbarDropdownMenuLink-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Why Plexaderm
+                        </a>
+                        <div class="dropdown-menu dropdown-default pb-lg-5" aria-labelledby="navbarDropdownMenuLink-3">
+                        <div class="container p-0">
+                           <div class="row w-100 m-0">
+                              <div class="col-12 col-lg-5">
+                              <span class="dropdown-title d-none d-lg-block">Why Plexaderm</span>
+                              <a class="dropdown-item" href="../catalog/catalog.html">Our Story</a>
+                              <a class="dropdown-item" href="../catalog/catalog.html">Awards</a>
+                              <a class="dropdown-item" href="../catalog/catalog.html">Reviews</a>
+                              <a class="dropdown-item" href="../catalog/catalog.html">Stories</a>
+                              <a class="dropdown-item" href="../catalog/catalog.html">FAQ’s & Tips</a>
+                              </div>
+                              <div class="col-12 col-lg-7 d-none d-lg-block">
+                              <img
+                              class="d-block img-fluid"
+                              src="https://via.placeholder.com/600x270.png?text=NavImage-600x270"
+                              alt="First Slide"
+                              />
+                              </div>
+                           </div>
+                        </div>
+                        </div>
+                     </li>
+                  </ul>
+                  <ul class="navbar-nav ml-auto nav-flex-icons">
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">
+                        <img class="nav-icon" src="/WorkProjects/catalog/Assets/images/creative/search.png">
+                        </a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">
+                        <img class="nav-icon" src="/WorkProjects/catalog/Assets/images/creative/cart.png">
+                        <span class="badge badge-pill bg-white">(23)</span>
+                        </a>
+                     </li>
+                  </ul>
+                  </div>
+               </div>
+            </nav>
+         </header>
+         <!--/.Navbar -->
+
+         <!-- Content -->
+         <main role="main">
+            <!-- Carousel -->
+            <div
+            id="carouselId"
+            class="carousel slide blogBanner container"
+            data-ride="carousel"
+            >
+            <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+               <picture>
+                  <source
+                  sizes="(max-width: 576px)"
+                  srcset="
+                     https://via.placeholder.com/576x576?text=First%20Slide&amp;auto=compress%2Cformat&amp;q=65&amp;w=464 464w
+                  "
+                  />
+                  <img
+                  class="d-block"
+                  src="https://via.placeholder.com/1500x400?text=First%20Slide&amp;auto=compress%2Cformat&amp;q=65&amp;w=624"
+                  alt="First Slide"
+                  />
+               </picture>
+               <div class="carousel-caption container">
+                  <div class="alignment">
+                  <h1>Sheer Voice Blog</h1>
+                  <h2>Inspiring Lives With Innovative Ideas</h2>
+                  </div>
+               </div>
+            </div>
+            </div>
+            </div>
+
+            <div class="container mt-2">
+            <div class="row">
+            <div class="col-12 col-md-8 blog-article">
+               <div class="card-body">
+                  <h4 class="card-title">Blog Title</h4>
+                  <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit
+                  esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia
+                  deserunt mollit anim id est laborum.
+                  </p>
+               </div>
+               <div class="card-footer">
+                  <div class="comment-wrapper">
+                  <div class="panel panel-info">
+                     <div class="panel-heading"></div>
+                     <div class="panel-body">
+                        <textarea
+                        class="form-control"
+                        placeholder="write a comment..."
+                        rows="3"
+                        ></textarea>
+                        <br />
+                        <button
+                        type="button"
+                        class="btn btn-primary pull-right"
+                        >
+                        Post
+                        </button>
+                        <div class="clearfix"></div>
+                        <hr />
+                        <ul class="media-list">
+                        <li class="media my-3">
+                           <a href="#" class="pull-left">
+                              <img
+                              src="https://bootdey.com/img/Content/user_1.jpg"
+                              alt=""
+                              class="img-circle"
+                              />
+                           </a>
+                           <div class="media-body">
+                              <span class="text-muted pull-right">
+                              <small class="text-muted">10 min ago</small>
+                              </span>
+                              <strong>@MartinoMont</strong>
+                              <p>
+                              Lorem ipsum dolor sit amet, consectetur
+                              adipiscing elit. Lorem ipsum dolor sit amet,
+                              <a href="#">#consecteturadipiscing </a>.
+                              </p>
+                           </div>
+                        </li>
+                        <li class="media my-3">
+                           <a href="#" class="pull-left">
+                              <img
+                              src="https://bootdey.com/img/Content/user_2.jpg"
+                              alt=""
+                              class="img-circle"
+                              />
+                           </a>
+                           <div class="media-body">
+                              <span class="text-muted pull-right">
+                              <small class="text-muted">30 min ago</small>
+                              </span>
+                              <strong>@LaurenceCorreil</strong>
+                              <p>
+                              Lorem ipsum dolor sit amet, consectetur
+                              adipiscing elit. Lorem ipsum dolor
+                              <a href="#">#ipsumdolor </a>adipiscing elit.
+                              </p>
+                           </div>
+                        </li>
+                        <li class="media my-3">
+                           <a href="#" class="pull-left">
+                              <img
+                              src="https://bootdey.com/img/Content/user_3.jpg"
+                              alt=""
+                              class="img-circle"
+                              />
+                           </a>
+                           <div class="media-body">
+                              <span class="text-muted pull-right">
+                              <small class="text-muted">45 min ago</small>
+                              </span>
+                              <strong>@JohnNida</strong>
+                              <p>
+                              Lorem ipsum dolor <a href="#">#sitamet</a> sit
+                              amet, consectetur adipiscing elit.
+                              </p>
+                           </div>
+                        </li>
+                        </ul>
+                     </div>
+                  </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-12 col-md-4 blog-sidebar">
+               <div class="recent-posts">
+                  <h4 class="widget-title">Recent Posts</h4>
+                  <a href="">
+                  <div class="related-post-thumbnail-container">
+                     <img
+                        src="https://via.placeholder.com/300/ccc/fff.png%20C/O%20https://placeholder.com/"
+                        alt=""
+                     />
+                  </div>
+                  <div class="related-post-container">
+                     <h4>Related Blog Title</h4>
+                  </div>
+                  <div class="clearfix"></div>
+                  </a>
+
+                  <a href="">
+                  <div class="related-post-thumbnail-container">
+                     <img
+                        src="https://via.placeholder.com/300/ccc/fff.png%20C/O%20https://placeholder.com/"
+                        alt=""
+                     />
+                  </div>
+                  <div class="related-post-container">
+                     <h4>Related Blog Title</h4>
+                  </div>
+                  <div class="clearfix"></div>
+                  </a>
+
+                  <a href="">
+                  <div class="related-post-thumbnail-container">
+                     <img
+                        src="https://via.placeholder.com/300/ccc/fff.png%20C/O%20https://placeholder.com/"
+                        alt=""
+                     />
+                  </div>
+                  <div class="related-post-container">
+                     <h4>Related Blog Title</h4>
+                  </div>
+                  <div class="clearfix"></div>
+                  </a>
+               </div>
+            </div>
+            </div>
+            </div>
+         </main>
+         <!-- Content.// -->
+
+         <!-- Footer -->
+         <footer class="mt-4">
+         <section class="container text-center pt-2 pb-2"></section>
+
+         <section class="container text-center pt-2 pb-2">
+            <div class="row">
+               <div class="col-lg-3 col-md-6 col-12 py-2">
+               <div class="footer-widget">
+                  <div class="footer-menu footer-menu--1">
+                     <span class="footer-widget-title">Company</span>
+                     <ul class="mt-2">
+                     <li class="mb-2">
+                        <a href="#">Our Story</a>
+                     </li>
+                     <li class="mb-2">
+                        <a href="#">Awards</a>
+                     </li>
+                     <li class="mb-2">
+                        <a href="#">Satisfaction Guarantee</a>
+                     </li>
+                     <li class="mb-2">
+                        <a href="#">Privacy Policy</a>
+                     </li>
+                     <li class="mb-2">
+                        <a href="#">Partners</a>
+                     </li>
+                     <li class="mb-2">
+                        <a href="#">Press Release</a>
+                     </li>
+                     <li class="mb-2">
+                        <a href="#">Do Not Sell My Info</a>
+                     </li>
+                     </ul>
+                  </div>
+               </div>
+               </div>
+               <div class="col-lg-3 col-md-6 col-12 py-2">
+               <div class="footer-widget">
+                  <div class="footer-menu footer-menu--1">
+                     <span class="footer-widget-title">Shipping & Returns</span>
+                     <ul class="mt-2">
+                     <li class="mb-2">
+                        <a href="#">International Orders</a>
+                     </li>
+                     <li class="mb-2">
+                        <a href="#">Return Policy</a>
+                     </li>
+                     <li class="mb-2">
+                        <a href="#">Shipping Policy</a>
+                     </li>
+                     </ul>
+                  </div>
+               </div>
+               </div>
+               <div class="col-lg-3 col-md-6 col-12 py-2">
+               <div class="footer-widget">
+                  <div class="footer-menu">
+                     <span class="footer-widget-title">Customer Service</span>
+                     <ul class="mt-2">
+                     <li class="mb-2">
+                        <a href="#">Email Address</a>
+                     </li>
+                     <li class="mb-2">
+                        <a href="#">Customer Care</a>
+                     </li>
+                     <li class="mb-2">
+                        <a href="#">Monday - Friday 8am - 7pm EST</a>
+                     </li>
+                     <li class="mb-2">
+                        <a href="#">Saturday 8am - 5pm EST</a>
+                     </li>
+                     <li class="mb-2">
+                        <a href="#">Call to Order 800#</a>
+                     </li>
+                     <li class="mb-2">
+                        <a href="#">Service & Support 800#</a>
+                     </li>
+                     <li class="mb-2">
+                        <a href="#">Contact Us link to an email</a>
+                     </li>
+                     </ul>
+                  </div>
+                  <!-- end /.footer-menu -->
+               </div>
+               <!-- Ends: .footer-widget -->
+               </div>
+               <div class="col-lg-3 col-md-6 col-12 pt-2">
+               <div class="footer-widget">
+                  <div class="footer-menu no-padding">
+                     <span class="footer-widget-title">Community</span>
+                     <ul class="mt-2">
+                     <li class="mb-2">
+                        <a href="#">Blog</a>
+                     </li>
+                     <li class="mb-2">
+                        <a href="#">Reviews</a>
+                     </li>
+                     <li class="mb-2">
+                        <a href="#">Stories</a>
+                     </li>
+                     <li class="mb-2">
+                        <a href="#">FAQs</a>
+                     </li>
+                     </ul>
+                  </div>
+                  <!-- end /.footer-menu -->
+               </div>
+               <!-- Ends: .footer-widget -->
+               </div>
+            </div>
+         </section>
+         
+         <section class="container text-center pt-2 pb-2">
+            <ul class="social-links">
+               <li id="twitter-social-link">
+               <a class="fa fa-twitter social-link" alt="Follow Plexaderm on Twitter" aria-label="Follow Plexaderm on Twitter" href="https://twitter.com/plexaderm">
+                  <span class="sr-only">Twitter</span>
+               </a>
+               </li>
+               <li id="instagram-social-link">
+               <a class="fa fa-instagram social-link" alt="Follow Plexaderm on Instagram" aria-label="Follow Plexaderm on Instagram" href="https://www.instagram.com/plexaderm">
+                  <span class="sr-only">Instagram</span>
+               </a>
+               </li>
+               <li id="facebook-social-link">
+               <a class="fa fa-facebook social-link" alt="Follow Plexaderm on Facebook" aria-label="Follow Plexaderm on Facebook" href="https://www.facebook.com/Plexaderm">
+                  <span class="sr-only">Facebook</span>
+               </a>
+               </li>
+               <li id="pinterest-social-link">
+               <a class="fa fa-pinterest social-link" alt="Follow Plexaderm on Pinterest" aria-label="Follow Plexaderm on Pinterest" href="https://www.pinterest.com/plexadermskinca">
+                  <span class="sr-only">Pinterest</span>
+               </a>
+               </li>
+               <li id="youtube-social-link">
+               <a class="fa fa-youtube social-link" alt="Follow Plexaderm on Youtube" aria-label="Follow Plexaderm on Youtube" href="https://www.youtube.com/c/plexadermskincare">
+                  <span class="sr-only">Youtube</span>
+               </a>
+               </li>
+         </ul>
+         </section>
+
+         <section class="container text-center pt-2 pb-5">
+            <p>
+               † These statements have not been evaluated by the food and drug
+               administration. This product is not intended to diagnose, treat,
+               cure or prevent any disease.
+            </p>
+            <p>
+               **Free Standard Shipping applies on all orders within the contiguous Unites States. Additional shipping and processing fees may apply to orders shipping to Alaska and Hawaii. International Shipping rates are calculated by
+               weight and destination and will vary.
+            </p>
+            <p>*Individual Results May Vary.</p>
+            <p>
+               Discount already reflected in the advertised product price;
+               limited time, limited quantities available; coupon codes not valid
+               on select Kits, Bundles, Duos or Sets; while supplies last.
+            </p>
+            <p>
+               ^Extra $10 off applies to any $49 order, extra $20 off applies to
+               any $99 order, extra $30 off applies to any $149 order, use code
+               NEWWHO at checkout; expires 2/01/2021 at 11:59PM ET; Coupon codes
+               not valid on select kits, bundles, duos or sets; limit one (1)
+               coupon code use per customer; limit one (1) coupon code use per
+               order; minimum $59 purchase required.
+            </p>
+         </section>
+         </footer>
+         <!-- Footer.// -->
+      </div>
+    </div>
+  </body>
+</html>
+
+<script async src="/WorkProjects/catalog/Assets/js/main.js"></script>

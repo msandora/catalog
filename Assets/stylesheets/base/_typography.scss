@@ -3,8 +3,8 @@
 */
 body {
 	color: $text-color;
-	@include font-size(18px);
-	@include respond-to('md') {
+	@include font-size(17px);
+	@include respond-to('xsm') {
 		@include font-size(16px);
 	}
 }

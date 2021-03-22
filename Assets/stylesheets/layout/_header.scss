@@ -16,9 +16,12 @@ header {
   .navbar-brand {
     margin-right: 2.3rem;
     .navbar-logo {
-      max-width: 245px;
-      @include respond-to('xsm') {
-        max-width: 195px;
+      max-width: 195px;
+      position: relative;
+      left: -11px;
+
+      @include respond-to('md') {
+        max-width: 245px;
       }
     }
   }
@@ -64,6 +67,14 @@ header {
       @include respond-to('md') {
         padding: .25rem 1.5rem;
       }
+ 
+      @include on-event {
+        background-color: transparent !important;
+        color: $brand-color !important;
+        text-decoration: none;
+      }
+     
+      
     }
     img{
       margin-top: 10px;

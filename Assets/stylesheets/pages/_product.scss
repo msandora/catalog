@@ -7,3 +7,26 @@
     width: 100%;
   }
 }
+
+
+
+#clinical-study {
+
+  .study-rating {
+    span{
+      margin: 0 auto;
+    }
+    border: 1px solid $gray;
+    border-radius: 200px;
+    height: 120px;
+    width: 120px;
+    margin: 0 auto;
+
+    @include font-size(28px);
+    color: $brand-secondary;
+    font-weight: bold;
+  }
+  span.study-analysis{
+    @include font-size(16px);
+  }
+}
