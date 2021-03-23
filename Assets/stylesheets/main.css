@@ -10920,6 +10920,10 @@ footer .footer-menu li a {
   display: inline-block;
 }
 
+.newsletter {
+  color: #7F89B2;
+}
+
 button {
   background: transparent;
   border: 0;
@@ -11149,6 +11153,75 @@ button, input {
 #carouselId .carousel-caption a.btn {
   padding: 0.5rem 1rem;
   font-weight: bold;
+}
+
+#beforeAfterCarousel .carousel-control-prev {
+  right: 30px;
+  left: unset;
+}
+
+#beforeAfterCarousel .carousel-control-prev,
+#beforeAfterCarousel .carousel-control-next {
+  bottom: -95%;
+}
+
+@media (max-width: 768px) {
+  #beforeAfterCarousel .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  #beforeAfterCarousel .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+}
+
+#beforeAfterCarousel .carousel-inner .carousel-item.active,
+#beforeAfterCarousel .carousel-inner .carousel-item-next,
+#beforeAfterCarousel .carousel-inner .carousel-item-prev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#beforeAfterCarousel .carousel-inner .carousel-item-left.active {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#beforeAfterCarousel .carousel-inner .carousel-item-right.active {
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+#beforeAfterCarousel .carousel-inner .carousel-item-next {
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+#beforeAfterCarousel .carousel-inner .carousel-item-prev {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#beforeAfterCarousel .carousel-inner .carousel-item-right,
+#beforeAfterCarousel .carousel-inner .carousel-item-left {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+#beforeAfterCarousel .card {
+  border: none;
+}
+
+#beforeAfterCarousel .card img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+#beforeAfterCarousel .card .card-text {
+  margin: 10px auto 0;
+  max-width: 410px;
 }
 
 #suggestion-carousel {

@@ -23,8 +23,30 @@ $(".dropdown a.nav-link").click(function() {
 // });
 
 
+$('#beforeAfterCarousel').carousel({
+  interval: 5000
+})
+
+$('#beforeAfterCarousel.carousel .carousel-item').each(function(){
+  // var minPerSlide = 2;
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+  
+  // for (var i=0;i<minPerSlide;i++) {
+  //     next=next.next();
+  //     if (!next.length) {
+  //       next = $(this).siblings(':first');
+  //     }
+      
+  //     next.children(':first-child').clone().appendTo($(this));
+  //   }
+});
+
 $('#suggestionCarousel').carousel({
-  interval: 10000
+  interval: 5000
 })
 
 $('#suggestionCarousel.carousel .carousel-item').each(function(){
@@ -57,26 +79,26 @@ $(function(){
   });
 });
 
-$(function () {
-  if ($(window).width() > 768) {
-    var content = $(".content");
-    var promo = $(".MarketingContainer__marketing-container");
-    var navbar = $(".navbar");
-    var pos = content.position();
-      $(window).scroll(function () {
-          var windowpos = $(window).scrollTop();
-          if (windowpos >= pos.top & windowpos >= 20) {
-            content.addClass("content--unpinned");
-            promo.addClass("py-2");
-            navbar.addClass("py-0");
-          } else {
-            content.removeClass("content--unpinned");
-            promo.removeClass("py-2");
-            navbar.removeClass("py-0");
-          }
-      });
-  }
-});
+// $(function () {
+//   if ($(window).width() > 768) {
+//     var content = $(".content");
+//     var promo = $(".MarketingContainer__marketing-container");
+//     var navbar = $(".navbar");
+//     var pos = content.position();
+//       $(window).scroll(function () {
+//           var windowpos = $(window).scrollTop();
+//           if (windowpos >= pos.top & windowpos >= 20) {
+//             content.addClass("content--unpinned");
+//             promo.addClass("py-2");
+//             navbar.addClass("py-0");
+//           } else {
+//             content.removeClass("content--unpinned");
+//             promo.removeClass("py-2");
+//             navbar.removeClass("py-0");
+//           }
+//       });
+//   }
+// });
 
 $(function () {
   function createYoutubeVideo() {

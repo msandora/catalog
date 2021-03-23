@@ -136,7 +136,14 @@
           <section
           id="carouselId"
           class="carousel slide container"
-          
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselId"
+              data-slide-to="0"
+              class="active"
+            ></li>
             <li data-target="#carouselId" data-slide-to="1"></li>
             <li data-target="#carouselId" data-slide-to="2"></li>
           </ol>
@@ -165,16 +172,16 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="carousel-item" data-slide-number="1">
+            <div class="carousel-item" data-slide-number="0">
               <picture>
                 <source
                   sizes="(max-width: 576px)"
-                  srcset="https://via.placeholder.com/1140x300.png?text=Slide%202%20-1140x300"
+                  srcset="https://via.placeholder.com/960x300.png?text=Slide%201%20-%20960x300"
                 />
                 <img
                   class="d-block"
-                  src="https://via.placeholder.com/1140x300.png?text=Slide%202%20-1140x300"
-                  alt="Second Slide"
+                  src="https://via.placeholder.com/540x300.png?text=Slide%201%20-540x300"
+                  alt="First Slide"
                 />
               </picture>
               <div class="carousel-caption container">
@@ -189,6 +196,7 @@
                 </div>
               </div>
             </div>
+            <!--
             <div class="carousel-item" data-slide-number="2">
               <picture>
                 <source
@@ -357,7 +365,33 @@
 
         <!-- Footer -->
         <footer class="mt-4">
-          <section class="container text-center pt-2 pb-2"></section>
+          <section class="newsletter container text-center pt-4 pb-2">
+            <div class="row justify justify-content-center">
+              <div class="col-12 col-lg-9 col-xl-8">
+                  <form class="">
+                      <div class="card">
+                          <div class="row justify-content-center">
+                              <div class="col-md-9 col-11">
+                                  <div class="row mt-3">
+                                      <div class="col-md-12 ">
+                                          <h4 class="text-center heading">SAVE XX% ON YOUR FIRST ORDER</h4>
+                                          <p class="text-center sub-heading">Stay up to date with special offers and discounts</p>
+                                      </div>
+                                  </div>
+                                  <div class="form-group row mb-3">
+                                      <div class="col-md-12 mb-0"> <input id="e-mail" type="text" placeholder="ENTER YOUR EMAIL" name="email" class="form-control input-box rm-border text-center"> </div>
+                                  </div>
+                                  <div class="form-group row justify-content-center">
+                                      <div class="col-md-12 px-3"> <input type="submit" value="COUNT ME IN!" class="btn btn-primary"> </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+
+          </section>
 
           <section class="container text-center pt-2 pb-2">
             <div class="row">
