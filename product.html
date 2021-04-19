@@ -343,21 +343,41 @@
                     >
                     <p class="card-text mb-4">5ml | .17 FL OZ</p>
                   </div>
-                  <div class="card-text mb-2 text-uppercase">
-                    <a class="btn btn-primary" href="/index.html"
-                      >Add To Bag</a
-                    >
-                  </div>
-                  <div class="card-text mb-2">
-                    <a class="btn btn-primary font-italic" href="/index.html"
-                      >Buy 2 GET 1 FREE</a
-                    >
-                  </div>
-                  <div class="card-text mb-2">
-                    <a class="btn btn-primary font-italic" href="/index.html"
-                      >Buy 4 GET 2 FREE</a
-                    >
-                  </div>
+
+                  <form method="post" action="/Tests/Post/">      
+                    <fieldset class="text-uppercase">      
+                        <legend>Add to cart</legend>      
+
+
+  <!-- Default checked -->
+  <div class="custom-control custom-radio">
+    <input type="radio" class="custom-control-input" id="defaultChecked" name="defaultExampleRadios" checked="">
+    <span class="checkmark"></span>
+    <label class="btn btn-block btn-primary custom-control-label" for="defaultChecked">Single Bottle</label>
+  </div>
+
+  <div class="my-2"></div>
+
+  <!-- Default unchecked -->
+  <div class="custom-control custom-radio">
+    <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
+    <span class="checkmark"></span>
+    <label class="btn btn-block btn-primary custom-control-label" for="defaultUnchecked">Buy 2 get 1 free</label>
+  </div>
+
+  <div class="my-2"></div>
+  <!-- Default unchecked -->
+  <div class="custom-control custom-radio">
+    <input type="radio" class="custom-control-input" id="defaultUnchecked1" name="defaultExampleRadios">
+    <span class="checkmark"></span>
+    <label class="btn btn-block btn-primary custom-control-label" for="defaultUnchecked1">Buy 4 get 2 free</label>
+  </div>
+
+  <div class="my-2"></div>
+
+                    </fieldset>      
+                </form>
+
               </div>
             </div>
           </section>
@@ -1021,7 +1041,7 @@
 
           <section class="container text-center pt-2 pb-2">
             <div class="row">
-              <div class="col-lg-3 col-md-6 col-12 py-2">
+              <div class="col-lg-4 col-12 py-2">
                 <div class="footer-widget">
                   <div class="footer-menu footer-menu--1">
                     <span class="footer-widget-title">Company</span>
@@ -1031,6 +1051,9 @@
                       </li>
                       <li class="mb-2">
                         <a href="#">Privacy Policy</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="#">Shipping & Returns</a>
                       </li>
                       <li class="mb-2">
                         <a href="#">Satisfaction Guarantee</a>
@@ -1045,25 +1068,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-6 col-12 py-2">
-                <div class="footer-widget">
-                  <div class="footer-menu footer-menu--1">
-                    <span class="footer-widget-title">Shipping & Returns</span>
-                    <ul class="mt-2">
-                      <li class="mb-2">
-                        <a href="#">International Orders</a>
-                      </li>
-                      <li class="mb-2">
-                        <a href="#">Return Policy</a>
-                      </li>
-                      <li class="mb-2">
-                        <a href="#">Shipping Policy</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-12 py-2">
+
+              <div class="col-lg-4 col-12 py-2">
                 <div class="footer-widget">
                   <div class="footer-menu">
                     <span class="footer-widget-title">Customer Service</span>
@@ -1104,7 +1110,7 @@
                 </div>
                 <!-- Ends: .footer-widget -->
               </div>
-              <div class="col-lg-3 col-md-6 col-12 pt-2">
+              <div class="col-lg-4 col-12 pt-2">
                 <div class="footer-widget">
                   <div class="footer-menu no-padding">
                     <span class="footer-widget-title">Community</span>

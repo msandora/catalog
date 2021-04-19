@@ -11407,6 +11407,58 @@ button, input {
   width: 100%;
 }
 
+.product-details .custom-control {
+  padding-left: 2rem;
+  /* Create a custom radio button */
+  /* Hide default bootstrap checkbox */
+  /* When the radio button is checked, add a blue background */
+  /* Show the indicator (dot/circle) when checked */
+}
+
+.product-details .custom-control .checkmark {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eeeeee;
+  border-radius: 50%;
+}
+
+.product-details .custom-control .checkmark:before {
+  display: none;
+}
+
+.product-details .custom-control .checkmark:after {
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  content: "";
+  position: absolute;
+  display: none;
+  /* Style the indicator (dot/circle) */
+  top: 9px;
+  left: 8.5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.product-details .custom-control .custom-control-label:before {
+  opacity: 0;
+}
+
+.product-details .custom-control .custom-control-label:after {
+  opacity: 0;
+}
+
+.product-details .custom-control input:checked ~ .checkmark {
+  background-color: #7F89B2;
+}
+
+.product-details .custom-control input:checked ~ .checkmark:after {
+  display: block;
+}
+
 #clinical-study .study-rating {
   border: 1px solid #555555;
   border-radius: 200px;
