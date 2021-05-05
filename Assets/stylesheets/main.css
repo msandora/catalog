@@ -10655,7 +10655,6 @@ a:hover, a:active, a:focus {
  * Default settings for list elements
  */
 ol, ul, li {
-  list-style-type: none;
   padding: 0px;
   margin: 0px;
 }
@@ -10689,7 +10688,7 @@ a.anchor {
 
 @font-face {
   font-family: "OpenSans";
-  src: url("/WorkProjects/catalog/Assets/images/fonts/OpenSans.ttf") format("truetype");
+  src: url("/catalog/Assets/images/fonts/OpenSans.ttf") format("truetype");
 }
 
 /**
@@ -10881,6 +10880,10 @@ header .dropdown-menu img {
 footer {
   background-color: #7F89B2;
   color: white;
+}
+
+footer .footer-menu ol, footer .footer-menu ul, footer .footer-menu li {
+  list-style-type: none;
 }
 
 footer .footer-menu .footer-widget-title {
@@ -11315,7 +11318,7 @@ button, input {
 }
 
 .mission-statement {
-  background: #cccccc url("/WorkProjects/catalog/Assets/images/creative/mission_statement.jpg") no-repeat center;
+  background: #cccccc url("/catalog/Assets/images/creative/mission_statement.jpg") no-repeat center;
   background-size: cover;
   height: 320px;
 }

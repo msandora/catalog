@@ -2,6 +2,9 @@ footer {
   background-color: $brand-secondary;
   color:$white-base; 
   .footer-menu {
+    ol, ul, li {
+      list-style-type: none;
+    }
     .footer-widget-title {
       color: $brand-color;
       font-weight: bold;
