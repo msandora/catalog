@@ -10688,7 +10688,7 @@ a.anchor {
 
 @font-face {
   font-family: "OpenSans";
-  src: url("/catalog/Assets/images/fonts/OpenSans.ttf") format("truetype");
+  src: url("/WorkProjects/catalog/Assets/images/fonts/OpenSans.ttf") format("truetype");
 }
 
 /**
@@ -10983,6 +10983,10 @@ button, input {
 
 .play-button img {
   height: 75px;
+}
+
+.btn-link {
+  color: #00214A;
 }
 
 #product-reviews img.star-rating {
@@ -11318,7 +11322,7 @@ button, input {
 }
 
 .mission-statement {
-  background: #cccccc url("/catalog/Assets/images/creative/mission_statement.jpg") no-repeat center;
+  background: #cccccc url("/WorkProjects/catalog/Assets/images/creative/mission_statement.jpg") no-repeat center;
   background-size: cover;
   height: 320px;
 }
@@ -11398,6 +11402,70 @@ button, input {
     font-size: 24px;
     font-size: 1.5rem;
   }
+}
+
+.product-details input,
+.product-details textarea {
+  border: 1px solid #eeeeee;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  outline: none;
+  padding: 10px;
+}
+
+.product-details input[type="button"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+.product-details input::-webkit-outer-spin-button,
+.product-details input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.product-details .input-group {
+  clear: both;
+  margin: 15px 0;
+  position: relative;
+}
+
+.product-details .input-group input[type='button'] {
+  background-color: #eeeeee;
+  min-width: 38px;
+  width: auto;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.product-details .input-group .button-minus,
+.product-details .input-group .button-plus {
+  font-weight: bold;
+  height: 38px;
+  padding: 0;
+  width: 38px;
+  position: relative;
+}
+
+.product-details .input-group .quantity-field {
+  position: relative;
+  height: 38px;
+  left: -6px;
+  text-align: center;
+  width: 62px;
+  display: inline-block;
+  font-size: 13px;
+  margin: 0 0 5px;
+  resize: vertical;
+}
+
+.product-details .button-plus {
+  left: -13px;
+}
+
+.product-details input[type="number"] {
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
 }
 
 .product-details h1 {
